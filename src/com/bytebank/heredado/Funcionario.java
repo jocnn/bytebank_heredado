@@ -31,4 +31,9 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public double getBonificacion() {
+        // muestra el 10% sobre el salario
+        return this.salario * 0.1;
+    }
+
 }
