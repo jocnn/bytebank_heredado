@@ -5,7 +5,7 @@ public class TestFuncionario {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNombre("Diego");
 		funcionario.setTipo(0);
-		funcionario.setDocumento("349857349");
+		funcionario.setDocumentoIdentidad("349857349");
 		funcionario.setSalario(2000);
 
 		Gerente gerente = new Gerente();
