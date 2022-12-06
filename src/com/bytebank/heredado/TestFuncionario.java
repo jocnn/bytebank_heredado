@@ -2,13 +2,22 @@ package com.bytebank.heredado;
 
 public class TestFuncionario {
 	public static void main(String[] args) {
-		Funcionario diego = new Funcionario();
-		diego.setNombre("Diego");
-		diego.setTipo(0);
-		diego.setDocumento("349857349");
-		diego.setSalario(2000);
+		Funcionario funcionario = new Funcionario();
+		funcionario.setNombre("Diego");
+		funcionario.setTipo(0);
+		funcionario.setDocumento("349857349");
+		funcionario.setSalario(2000);
 
-		System.out.println(diego.getSalario());
-		System.out.println(diego.getBonificacion());
+		Gerente gerente = new Gerente();
+		gerente.setSalario(6000);
+		gerente.setClave("AluraCursosOnLine");
+		gerente.setTipo(1);
+
+		System.out.println(funcionario.getSalario());
+		System.out.println(funcionario.getBonificacion());
+	
+		System.out.println(gerente.getBonificacion());
+		System.out.println(gerente.iniciarSession("AluraCursosOnLine"));
+	
 	}
 }
