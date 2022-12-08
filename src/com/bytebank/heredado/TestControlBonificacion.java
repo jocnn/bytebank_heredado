@@ -10,10 +10,16 @@ public class TestControlBonificacion {
 		gerente.setNombre("Jimena");
 		gerente.setSalario(10000);
 
+		Funcionario contador = new Contador();
+		contador.setNombre("Pedro");
+		contador.setSalario(10000);
+
 		ControlBonificacion controlBonificacion = new ControlBonificacion();
 		controlBonificacion.registrarSalario(funcionario);
 
 		controlBonificacion.registrarSalario(gerente);
+
+		controlBonificacion.registrarSalario(contador);
 
 	}
 }
