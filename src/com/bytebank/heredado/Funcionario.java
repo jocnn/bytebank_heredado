@@ -1,6 +1,6 @@
 package com.bytebank.heredado;
 
-public class Funcionario {
+public abstract class Funcionario {
 
     private String nombre;
     private String documentoIdentidad;

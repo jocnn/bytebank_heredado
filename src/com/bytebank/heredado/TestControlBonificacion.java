@@ -2,7 +2,7 @@ package com.bytebank.heredado;
 
 public class TestControlBonificacion {
 	public static void main(String[] args) {
-		Funcionario funcionario = new Funcionario();
+		Funcionario funcionario = new Contador();
 		funcionario.setNombre("Diego");
 		funcionario.setSalario(2000);
 
