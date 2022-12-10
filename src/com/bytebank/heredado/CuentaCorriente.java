@@ -2,6 +2,11 @@ package com.bytebank.heredado;
 
 public class CuentaCorriente extends Cuenta {
 
+	@Override
+	public void deposita(double valor) {
+		this.saldo = this.saldo + valor;
+	}
+
 	public CuentaCorriente(int agencia, int numero) {
 		super(agencia, numero);
 	}
