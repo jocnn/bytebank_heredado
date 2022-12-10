@@ -20,9 +20,10 @@ public class Gerente extends Funcionario {
 		}
 	}
 
+	@Override
 	public double getBonificacion() {
 		System.out.println("Llamando método del Gerente");
-		return super.getBonificacion() + super.getSalario();
+		return super.getSalario() + this.getSalario() * 0.05;
 	}
 
 }
