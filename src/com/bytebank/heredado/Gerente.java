@@ -2,22 +2,18 @@ package com.bytebank.heredado;
 
 public class Gerente extends Funcionario implements Autenticable {
 	
-	private String clave;
+	private AutenticacionUtil util;
 
-	public String getClave() {
-		return this.clave;
+	public Gerente() {
+		this.util = new AutenticacionUtil();
 	}
 
 	public void setClave(String clave) {
-		this.clave = clave;
+		this.util.setClave(clave);
 	}
 
 	public boolean iniciarSession(String clave) {
-		if (this.clave == clave) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.util.iniciarSesion(clave);
 	}
 
 	@Override
