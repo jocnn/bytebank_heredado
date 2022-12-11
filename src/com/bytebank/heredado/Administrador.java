@@ -1,7 +1,6 @@
 package com.bytebank.heredado;
 
-public class Gerente extends Funcionario implements Autenticable {
-	
+public class Administrador extends Funcionario implements Autenticable {
 	private String clave;
 
 	public String getClave() {
@@ -11,7 +10,13 @@ public class Gerente extends Funcionario implements Autenticable {
 	public void setClave(String clave) {
 		this.clave = clave;
 	}
+	
+	@Override
+	public double getBonificacion() {
+			return 0;
+	}
 
+	@Override
 	public boolean iniciarSession(String clave) {
 		if (this.clave == clave) {
 			return true;
@@ -19,11 +24,4 @@ public class Gerente extends Funcionario implements Autenticable {
 			return false;
 		}
 	}
-
-	@Override
-	public double getBonificacion() {
-		System.out.println("Llamando método del Gerente");
-		return super.getSalario() + this.getSalario() * 0.05;
-	}
-
 }
